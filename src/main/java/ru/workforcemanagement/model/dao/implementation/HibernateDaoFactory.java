@@ -7,7 +7,6 @@ import ru.workforcemanagement.model.dao.UserDao;
 public class HibernateDaoFactory implements DaoFactory {
     @Override
     public UserDao createUserDao() {
-        System.out.println("created user dao");
         return new HibernateUserDao();
     }
 

@@ -7,6 +7,7 @@
     </style>
 </head>
 <body>
+    <a href="/profile/tasks" class="back">←</a>
     <form method="post" action="/profile/tasks/add">
         <div class="container">
             <h1>Добавление задачи</h1>

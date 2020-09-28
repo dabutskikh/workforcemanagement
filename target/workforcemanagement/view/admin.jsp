@@ -7,6 +7,7 @@
     </style>
 </head>
 <body>
+    <a href="/profile" class="back">←</a>
     <div class="container">
         <h1>Страница администратора</h1>
         <a class="menu-item" href="/profile/admin/profiles">Профили всех сотрудников</a>

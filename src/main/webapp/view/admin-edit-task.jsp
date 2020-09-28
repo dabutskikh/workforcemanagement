@@ -10,12 +10,13 @@
     </style>
 </head>
 <body>
+<a href="/profile/admin/tasks" class="back">←</a>
     <%Long taskId = Long.parseLong(request.getParameter("task-id"));%>
     <%Task task = DataAccess.getTaskDao().get(taskId);%>
     <form method="post" action="/profile/admin/tasks/edit?task-id=<%=task.getId()%>">
         <div class="container">
             <h1>Редактировать задачу</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы отредактировать задачу.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы отредактировать задачу</p>
             <hr>
 
             <label for="name"><b>Название</b></label>
@@ -25,10 +26,10 @@
             <input id="description" type="text" placeholder="Enter Description" name="description" value="<%=task.getDescription()%>" required>
 
             <label for="date-begin">Начало</label>
-            <input id="date-begin" name="date-begin" type="datetime-local">
+            <input id="date-begin" name="date-begin" type="datetime-local" required>
 
             <label for="date-end">Окончание</label>
-            <input id="date-end" name="date-end" type="datetime-local">
+            <input id="date-end" name="date-end" type="datetime-local" required>
 
             <label for="user-id">Исполнитель</label>
             <select id="user-id" name="user-id">

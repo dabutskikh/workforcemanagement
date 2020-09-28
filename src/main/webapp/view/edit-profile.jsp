@@ -8,11 +8,12 @@
     </style>
 </head>
 <body>
+    <a href="/profile" class="back">←</a>
     <%User user = (User) session.getAttribute("user");%>
     <form method="post" action="/profile/edit">
         <div class="container">
             <h1>Редактирование учетной записи</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы отредактировать учетную запись.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы отредактировать учетную запись</p>
             <hr>
 
             <label for="login"><b>Логин</b></label>

@@ -9,10 +9,11 @@
     </style>
 </head>
 <body>
+    <a href="/profile/admin/tasks" class="back">←</a>
     <form method="post" action="/profile/admin/tasks/add">
         <div class="container">
             <h1>Создание задачи</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы создать задачу.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы создать задачу</p>
             <hr>
 
             <label for="name"><b>Название</b></label>

@@ -9,12 +9,13 @@
     </style>
 </head>
 <body>
+    <a href="/profile/tasks" class="back">←</a>
     <%Long taskId = Long.parseLong(request.getParameter("task-id"));%>
     <%Task task = DataAccess.getTaskDao().get(taskId);%>
     <form method="post" action="/profile/tasks/edit?task-id=<%=task.getId()%>">
         <div class="container">
             <h1>Редактирование задачи</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы отредактировать задачу.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы отредактировать задачу</p>
             <hr>
 
             <label for="name"><b>Название</b></label>

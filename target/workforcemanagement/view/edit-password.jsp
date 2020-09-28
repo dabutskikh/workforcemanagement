@@ -7,10 +7,11 @@
     </style>
 </head>
 <body>
+    <a href="/profile/edit" class="back">←</a>
     <form method="post" action="/profile/edit/password">
         <div class="container">
             <h1>Смена пароля</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы сменить пароль.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы сменить пароль</p>
             <hr>
 
             <label for="password"><b>Новый пароль</b></label>

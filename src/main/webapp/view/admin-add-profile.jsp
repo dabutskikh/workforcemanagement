@@ -7,10 +7,11 @@
     </style>
 </head>
 <body>
+    <a href="/profile/admin/profiles" class="back">←</a>
     <form method="post" action="/profile/admin/profiles/add">
         <div class="container">
             <h1>Создать учетную запись</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись</p>
             <hr>
 
             <label for="login"><b>Логин</b></label>

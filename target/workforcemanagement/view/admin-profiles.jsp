@@ -10,6 +10,7 @@
     </style>
 </head>
 <body>
+<a href="/profile/admin" class="back">←</a>
     <%SimpleDateFormat formater = new SimpleDateFormat("dd.MM.yyyy HH:mm");%>
     <div class="container">
         <h1>Список сотрудников</h1>

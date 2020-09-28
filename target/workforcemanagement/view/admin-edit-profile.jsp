@@ -9,12 +9,13 @@
     </style>
 </head>
 <body>
+    <a href="/profile/admin/profiles" class="back">←</a>
     <%Long userId = Long.parseLong(request.getParameter("user-id"));%>
     <%User user = DataAccess.getUserDao().get(userId);%>
     <form method="post" action="/profile/admin/profiles/edit?user-id=<%=user.getId()%>">
         <div class="container">
             <h1>Редактирование учетной записи</h1>
-            <p>Пожалуйста, заполните эту форму, чтобы отредактировать учетную запись.</p>
+            <p>Пожалуйста, заполните эту форму, чтобы отредактировать учетную запись</p>
             <hr>
 
             <label for="login"><b>Логин</b></label>
