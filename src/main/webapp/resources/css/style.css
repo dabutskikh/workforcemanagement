@@ -1,0 +1,137 @@
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.a-add {
+    display: block;
+    margin: 25px 0;
+    width: 165px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.menu-item {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 16px;
+    display: inline-block;
+    /*display: flex;*/
+    background-color: #4CAF50;
+    opacity: 0.9;
+    color: #f1f1f1;
+}
+
+.menu-item:hover {
+    opacity: 1.0;
+}
+
+table {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 12px;
+    box-shadow: 0 0 0 10px #f1f1f1;
+    color: #452F21;
+}
+th {
+    padding: 10px 8px;
+    background: white;
+}
+table th:first-child {
+    border-top-left-radius: 20px;
+}
+table th:last-child {
+    border-top-right-radius: 20px;
+}
+td {
+    border-top: 10px solid #f1f1f1;
+    padding: 8px;
+    background: white;
+}
+table td:first-child {
+    border-bottom-left-radius: 20px;
+}
+table td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=datetime-local] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+.sub {
+    background-color: #f1f1f1;
+    text-align: center;
+}

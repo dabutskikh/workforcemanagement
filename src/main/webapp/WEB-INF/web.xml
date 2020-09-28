@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <servlet>
+    <servlet-name>Index</servlet-name>
+    <jsp-file>/view/sign-in.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Profile</servlet-name>
+    <jsp-file>/view/profile.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Profile</servlet-name>
+    <url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Admin</servlet-name>
+    <jsp-file>/view/admin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/profile/admin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AllProfiles</servlet-name>
+    <jsp-file>/view/admin-profiles.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllProfiles</servlet-name>
+    <url-pattern>/profile/admin/profiles</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Tasks</servlet-name>
+    <jsp-file>/view/tasks.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tasks</servlet-name>
+    <url-pattern>/profile/tasks</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AllTasks</servlet-name>
+    <jsp-file>/view/admin-tasks.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllTasks</servlet-name>
+    <url-pattern>/profile/admin/tasks</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>ru.workforcemanagement.controller.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/profile/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>AdminFilter</filter-name>
+    <filter-class>ru.workforcemanagement.controller.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AdminFilter</filter-name>
+    <url-pattern>/profile/admin/*</url-pattern>
+  </filter-mapping>
+
+</web-app>
