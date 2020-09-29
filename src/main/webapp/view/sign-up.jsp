@@ -14,7 +14,7 @@
             <hr>
 
             <label for="login"><b>Логин</b></label>
-            <input id="login" type="text" placeholder="Enter Login" name="login" required>
+            <input id="login" type="text" placeholder="Enter Login" name="login" autocomplete="off" required>
 
             <label for="password"><b>Пароль</b></label>
             <input id="password" type="password" placeholder="Enter Password" name="password" required>
@@ -23,16 +23,16 @@
             <input id="confirm-password" name="confirm-password" type="password" placeholder="Repeate password" required>
 
             <label for="surname"><b>Фамилия</b></label>
-            <input id="surname" name="surname" type="text" placeholder="Enter Surname" required>
+            <input id="surname" name="surname" type="text" placeholder="Enter Surname" autocomplete="off" required>
 
             <label for="name"><b>Имя</b></label>
-            <input id="name" name="name" type="text" placeholder="Enter Name" required>
+            <input id="name" name="name" type="text" placeholder="Enter Name" autocomplete="off" required>
 
             <label for="patronymic"><b>Отчество</b></label>
-            <input id="patronymic" name="patronymic" type="text" placeholder="Enter Patronymic" required>
+            <input id="patronymic" name="patronymic" type="text" placeholder="Enter Patronymic" autocomplete="off" required>
 
             <label for="specialization"><b>Должность</b></label>
-            <input id="specialization" name="specialization" type="text" placeholder="Enter Specialization" required>
+            <input id="specialization" name="specialization" type="text" placeholder="Enter Specialization" autocomplete="off" required>
 
             <hr>
 

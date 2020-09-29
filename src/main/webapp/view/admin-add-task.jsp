@@ -17,10 +17,10 @@
             <hr>
 
             <label for="name"><b>Название</b></label>
-            <input id="name" type="text" placeholder="Enter Name" name="name" required>
+            <input id="name" type="text" placeholder="Enter Name" name="name" autocomplete="off" required>
 
             <label for="description"><b>Краткое описание</b></label>
-            <input id="description" type="text" placeholder="Enter Description" name="description" required>
+            <input id="description" type="text" placeholder="Enter Description" name="description" autocomplete="off" required>
 
             <label for="date-begin">Начало</label>
             <input id="date-begin" name="date-begin" type="datetime-local" required>

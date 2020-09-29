@@ -14,7 +14,7 @@
             <hr>
 
             <label for="login"><b>Логин</b></label>
-            <input id="login" type="text" placeholder="Enter Login" name="login" required>
+            <input id="login" type="text" placeholder="Enter Login" name="login" autocomplete="off" required>
 
             <label for="password"><b>Пароль</b></label>
             <input id="password" type="password" placeholder="Enter Password" name="password" required>

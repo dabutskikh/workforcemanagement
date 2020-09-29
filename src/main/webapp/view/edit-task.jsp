@@ -19,10 +19,10 @@
             <hr>
 
             <label for="name"><b>Название</b></label>
-            <input id="name" type="text" placeholder="Enter Name" name="name" value="<%=task.getName()%>" required>
+            <input id="name" type="text" placeholder="Enter Name" name="name" value="<%=task.getName()%>" autocomplete="off" required>
 
             <label for="description"><b>Краткое описание</b></label>
-            <input id="description" type="text" placeholder="Enter Description" name="description" value="<%=task.getDescription()%>" required>
+            <input id="description" type="text" placeholder="Enter Description" name="description" value="<%=task.getDescription()%>" autocomplete="off" required>
 
             <label for="date-begin">Начало</label>
             <input id="date-begin" name="date-begin" type="datetime-local" required>
